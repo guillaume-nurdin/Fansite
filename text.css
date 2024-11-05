@@ -1,0 +1,13 @@
+.text {
+    width: 800px;
+    color: white;
+    display: flex;
+    justify-content: center;  /* Centre le contenu horizontalement */
+    align-items: center;      /* Centre le contenu verticalement */
+    font-family: "Poppins", sans-serif;
+    height: 50vh;            /* Définit la hauteur à 100% de la fenêtre */
+    margin: 0 auto;           /* Centre le bloc horizontalement avec une largeur fixe */
+}
+strong{
+    color: red;
+}

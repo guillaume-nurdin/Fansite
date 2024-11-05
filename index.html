@@ -1,0 +1,120 @@
+.sticky-header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 55;
+    top: 0px;
+    background-color: rgba(16, 21, 36, 0.9);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.9);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+  }
+  
+  .sticky-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .sticky-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .sticky-header li {
+    margin-right: 20px;
+    position: relative; /* Nécessaire pour le positionnement du sous-menu */
+  }
+  
+  .sticky-header a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Styles pour le sous-menu */
+  .sticky-header .submenu {
+    display: none; /* Masque le sous-menu par défaut */
+    position: absolute; /* Permet au sous-menu de se positionner par rapport au parent */
+    top: 100%; /* Place le sous-menu juste en dessous du lien parent */
+    left: 0; /* Positionne le sous-menu à gauche par défaut */
+    background-color: rgba(16, 21, 36, 0.9); /* Même fond que l'en-tête */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre pour le sous-menu */
+    z-index: 100; /* Assure que le sous-menu soit au-dessus d'autres éléments */
+    list-style: none;
+    padding: 0; /* Supprime l'espacement vertical du sous-menu principal */
+  }
+  
+  /* Affiche le sous-menu des services au survol */
+  .sticky-header li:hover > .submenu {
+    display: block; /* Affiche le sous-menu au survol de l'élément parent */
+  }
+  
+  /* Styles pour le sous-menu des sites de fans */
+  .sticky-header .submenu li {
+    margin: 0; /* Supprime les marges pour le sous-menu */
+    display: inline-block; /* Affiche les liens en ligne */
+  }
+  
+  /* Sous-menu des sites de fans */
+  .sticky-header .submenu .submenu {
+    display: none; /* Masque le sous-menu par défaut */
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    background-color: rgba(16, 21, 36, 0.9); /* Même fond que l'en-tête */
+    padding: 5px 0; /* Ajoute un peu d'espacement autour des liens */
+  }
+  
+  /* Affiche le sous-menu des sites de fans au survol du lien parent */
+  .sticky-header .submenu li:hover > .submenu {
+    display: block; /* Affiche le sous-menu des sites de fans */
+  }
+  
+  .sticky-header .submenu a {
+    padding: 10px 20px; /* Espacement des liens dans le sous-menu */
+    color: #fff; /* Couleur du texte des liens */
+    display: inline-block; /* Permet au lien d'occuper une partie de la largeur */
+  }
+  
+  .sticky-header .submenu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Change de couleur au survol */
+  }
+  
+  .twitter-container {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 650px;
+  }
+  
+  
+  
+  
+  
+
+  <header class="sticky-header">
+    <nav>
+      <ul>
+        <li><a href="C:\Users\BT\Desktop\github\Fansite\Deadcells.html">Actualité</a></li>
+        <li><a href="#">Réalisations</a></li>
+        <li>
+          <a href="#">Services</a>
+          <ul class="submenu">
+            <li><a href="#">Événements passés/à venir</a></li>
+            <li>
+              <a href="#">Liens vers d’autres sites</a>
+              <ul class="submenu">
+                <li><a href="https://deadcells.wiki.gg/wiki/Dead_Cells_Wiki" target="_blank">Wiki Dead cells</a></li>
+                <li><a href="https://store.steampowered.com/app/588650/Dead_Cells/" target="_blank">Dead cell sur steam</a></li>
+                <li><a href="https://dead-cells.com/" target="_blank">Site officiel Dead cells</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="C:\Users\BT\Desktop\github\Fansite\contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  
