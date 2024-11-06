@@ -14,7 +14,22 @@ body{background-color: #1f1c2e; /* Couleur de fond de remplacement */
  
   }
 
+  /* Image de fond */
+  .background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
+  /* Image du logo superposé */
+  .logo-overlay {
+    position: absolute;
+    top: 50%; /* Place le logo au centre verticalement */
+    left: 50%; /* Place le logo au centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour que le centre du logo soit au centre de l'image */
+    width: 50%; /* Taille du logo, à ajuster */
+    height: auto;
+  }
 
   
  /* Menu nav */
