@@ -24,6 +24,12 @@ body{background-color: #1f1c2e; /* Couleur de fond de remplacement */
 
 
 
+  /* twitter */
+.twitter-container {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 650px;
+}
 
 
 

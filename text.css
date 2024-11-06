@@ -1,23 +1,31 @@
 .text {
     margin: 0%;
     padding: 0%;
-    padding-top: 0px; /* Compense la hauteur du header */
+    padding-top: 50px;
     width: 800px;
-    color: white;
+    color: rgb(255, 244, 91);
     display: flex;
-    justify-content: center;  /* Centre le contenu horizontalement */
-    align-items: center;      /* Centre le contenu verticalement */
+    flex-direction: column; /* Change la direction en colonne pour que le texte centré soit au-dessus */
+    justify-content: flex-start; /* Aligne les éléments au début de la colonne */
+    align-items: center;
     font-family: "Poppins", sans-serif;
-    height: 50vh;            /* Définit la hauteur à 100% de la fenêtre */
-    margin: 0 auto;           /* Centre le bloc horizontalement avec une largeur fixe */
+    height: 250px;
+    margin: 0 auto;
 }
+
+.center-text {
+    text-align: center; /* Centre le texte */
+    margin-bottom: 20px; /* Ajoute un peu d'espace entre le texte centré et le texte aligné à gauche */
+}
+
+.left-align {
+    text-align: left; /* Aligne le texte à gauche */
+}
+
 strong{
     color: red;
 }
 
-.center-text {
-    text-align: center;
-  }
 
 
 
@@ -54,3 +62,4 @@ footer p {
     color: white;
     
 }
+
