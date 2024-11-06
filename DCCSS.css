@@ -14,22 +14,7 @@ body{background-color: #1f1c2e; /* Couleur de fond de remplacement */
  
   }
 
-  /* Image de fond */
-  .background-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
 
-  /* Image du logo superposé */
-  .logo-overlay {
-    position: absolute;
-    top: 50%; /* Place le logo au centre verticalement */
-    left: 50%; /* Place le logo au centre horizontalement */
-    transform: translate(-50%, -50%); /* Ajuste pour que le centre du logo soit au centre de l'image */
-    width: 50%; /* Taille du logo, à ajuster */
-    height: auto;
-  }
 
   
  /* Menu nav */
@@ -39,12 +24,6 @@ body{background-color: #1f1c2e; /* Couleur de fond de remplacement */
 
 
 
-  /* twitter */
-.twitter-container {
-  margin: 20px auto;
-  text-align: center;
-  max-width: 650px;
-}
 
 
 
@@ -171,3 +150,64 @@ body{background-color: #1f1c2e; /* Couleur de fond de remplacement */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   }
   
+
+  /* Style de base pour le menu */
+.menuDC nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; /* Place les icônes à droite */
+  align-items: center;
+}
+
+/* Style pour les icônes de réseaux sociaux */
+/* Style de base pour le menu */
+.menuDC nav {
+  display: flex;
+  justify-content: space-between; /* Espace entre les sections gauche et droite */
+  align-items: center;
+  padding: 0 20px; /* Ajustez le padding pour espacer le contenu du bord */
+}
+
+/* Liens de navigation à gauche */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Espace entre les éléments de menu */
+  margin: 0;
+  padding: 0;
+}
+
+/* Icônes de réseaux sociaux à droite */
+.social-icons {
+  display: flex;
+  list-style: none;
+  gap: 15px; /* Espace entre les icônes */
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff0000; /* Couleur de survol */
+}
+
+/* Style pour les liens de navigation */
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

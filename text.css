@@ -1,4 +1,7 @@
 .text {
+    margin: 0%;
+    padding: 0%;
+    padding-top: 0px; /* Compense la hauteur du header */
     width: 800px;
     color: white;
     display: flex;
@@ -10,4 +13,44 @@
 }
 strong{
     color: red;
+}
+
+.center-text {
+    text-align: center;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .text {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .center-text {
+        font-size: 1em;
+    }
+    
+    .center-text strong {
+        font-size: 1.4em;
+    }
+}
+
+
+footer {
+    width: 100%;           /* Largeur complète */
+    background-color: #101524; /* Fond coloré (couleur foncée) */
+    color: white;          /* Texte en blanc */
+    text-align: center;    /* Centrer le texte */
+    padding: 5px 0;       /* Espacement vertical */
+    position: relative;    /* Laisser le footer dans le flux normal du document */
+    margin-top: 5px;      /* Un peu d'espace avant le footer */
+  }
+
+
+footer p {
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    
 }
