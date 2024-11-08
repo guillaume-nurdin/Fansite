@@ -2,7 +2,10 @@
     box-sizing: border-box;
   }
   
-  body {
+  body { 
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #1b1b1b;
     display: grid;
     place-items: center;
     min-height: 100vh;
@@ -84,10 +87,52 @@
   li:is(:hover, :focus-within) + li + li + li + li + li + li {
     --active-lerp: var(--lerp-6);
     z-index: 1;
+
+  }
+
+
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #111;
   }
   
-
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
   
-
-
+  .nav-list li {
+    font-size: 18px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    color: #f39c12;
+  }
+  .menu-toggle-checkbox {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #fff;
+  }
   
