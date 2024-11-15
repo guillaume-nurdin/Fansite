@@ -38,7 +38,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,3 +163,93 @@ body {
     text-decoration: none;
     color: #fff;
   }
+
+  /* Section Réalisations */
+.realisations {
+    padding: 30px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+
+.realisations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 100px;
+}
+
+.realisation-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.realisation-item {
+    width: 300px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.realisation-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.realisation-item h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #eaeaea;
+}
+
+.realisation-item p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Section Auteurs */
+.auteurs {
+    padding: 30px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+
+.auteurs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.auteur-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.auteur-item {
+    width: 250px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.auteur-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.auteur-item h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #eaeaea;
+}
+
+.auteur-item p {
+    font-size: 1rem;
+    color: #ccc;
+}
