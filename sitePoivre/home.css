@@ -1,0 +1,52 @@
+/* Reset de base */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 15px; /* Espace entre les images */
+}
+
+/* Style des images */
+.container img {
+    width: 200px; /* Taille réduite des images */
+    height: auto;
+    border-radius: 8px; /* Coins légèrement arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.1); /* Légère animation d'agrandissement au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre accentuée */
+}
+
+
+/* Style pour le bouton Contact */
+.contact-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-button a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.contact-button a:hover {
+    background-color: #45a049;
+}
