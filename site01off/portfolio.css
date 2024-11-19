@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body { 
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #1b1b1b;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+  
+  ul {
+    display: flex;
+    width: calc(80% - 2rem);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  li {
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease;
+  }
+  
+  ul:is(:hover, :focus-within) img {
+    opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+    filter: grayscale(calc(1 - var(--active-lerp, 0)));
+  }
+  
+  :root {
+    --lerp-0: 1;
+    --lerp-1: 0.5787037;
+    --lerp-2: 0.2962963;
+    --lerp-3: 0.125;
+    --lerp-4: 0.037037;
+    --lerp-5: 0.0046296;
+    --lerp-6: 0;
+  }
+  
+  a {
+    outline-offset: 4px;
+  }
+  
+  li {
+    flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+    transition: flex 0.2s ease;
+  }
+  
+  li:is(:hover, :focus-within) {
+    --active-lerp: var(--lerp-0);
+    z-index: 7;
+  }
+  li:has( + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li {
+    --active-lerp: var(--lerp-1);
+    z-index: 6;
+  }
+  li:has( + li + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li + li {
+    --active-lerp: var(--lerp-2);
+    z-index: 5;
+  }
+  li:has( + li + li + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li + li + li {
+    --active-lerp: var(--lerp-3);
+    z-index: 4;
+  }
+  li:has( + li + li + li + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li + li + li + li {
+    --active-lerp: var(--lerp-4);
+    z-index: 3;
+  }
+  li:has( + li + li + li + li + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li + li + li + li + li {
+    --active-lerp: var(--lerp-5);
+    z-index: 2;
+  }
+  li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li + li + li + li + li + li {
+    --active-lerp: var(--lerp-6);
+    z-index: 1;
+
+  }
+
+
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #111;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-list li {
+    font-size: 18px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    color: #f39c12;
+  }
+  .menu-toggle-checkbox {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #fff;
+  }
+  
