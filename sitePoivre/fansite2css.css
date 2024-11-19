@@ -209,7 +209,7 @@
     left: 50%; /* Centre horizontalement */
     transform: translate(-50%, -50%); /* Ajuste pour que le logo soit parfaitement centré */
     text-align: center;
-    width: 100%; /* Prend toute la largeur disponible */
+    width: 50%; /* Prend toute la largeur disponible */
   }
   
   /* Image du logo superposé */

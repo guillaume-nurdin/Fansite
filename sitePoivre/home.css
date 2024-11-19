@@ -38,7 +38,7 @@ body, html {
 }
 
 .contact-button a {
-    background-color: #4CAF50;
+    background-color: #1b1b11;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -48,5 +48,5 @@ body, html {
 }
 
 .contact-button a:hover {
-    background-color: #45a049;
+    background-color: #1b1b11;
 }

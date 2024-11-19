@@ -50,7 +50,7 @@ input, textarea {
 
 button {
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #1b1b1b;
     color: white;
     border: none;
     border-radius: 4px;
@@ -60,7 +60,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #1b1b1b;
 }
 
 button:focus {
@@ -75,12 +75,12 @@ button:focus {
 
 .back-home a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #1b1b1b;
     font-size: 1.1rem;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .back-home a:hover {
-    color: #45a049;
+    color: #1b1b1b;
 }
